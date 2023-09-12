@@ -1,0 +1,1101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: '';
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.navbar {
+  /* height: 70px; */
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.navbar > .container,
+.hero_main > .container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navbar_categories {
+  float: right;
+}
+/* .navbar .weatherstack_logo {
+                display: inline-block;
+                margin-right: 10px;
+                top: 55px;
+                position: relative;
+                color: #333;
+            } */
+
+.navbar .weatherstack_logo {
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.navbar_categories ul {
+  list-style: none;
+}
+
+.navbar_categories li {
+  display: inline-block;
+}
+
+.navbar_categories a {
+  margin: 16px 0px 19px 15px;
+}
+
+.navbar_categories ul li a {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar_categories .status::before {
+  background-color: #47c652;
+  content: '';
+  width: 10px;
+  height: 10px;
+}
+
+.navbar_categories .status {
+  padding: 0 10px 1px;
+  border-radius: 3px;
+  background: 0 0;
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+.navbar_categories ul li .log_in {
+  padding: 0px 10px 1px;
+  background: rgba(255, 255, 255, 0.15);
+  line-height: 35px;
+}
+
+.navbar_categories ul li a.sign_up {
+  background: #f47b21;
+  padding: 0px 10px 1px;
+  line-height: 35px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.hero_main {
+  padding: 140px 0 160px 0;
+  background: url(https://weatherstack.com/site_images/mountains.svg),
+    linear-gradient(135deg, #1f4e69 0, #164058 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_main .inline {
+  float: left;
+  width: 433.73px;
+}
+
+.hero_main .weather_animated {
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  border-radius: 10px;
+  right: 450px;
+  border: 4px solid #608094;
+  background: #16394c;
+  color: #fff;
+}
+
+.hero_main .container .inline h2 {
+  margin: 0px 0px 20px;
+  font-size: 32px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.hero_main .container .inline h4 {
+  /* margin: 10px 0px 17px; */
+  font-size: 18px;
+  margin-bottom: 17px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+}
+
+.hero_main .inline .title1::before {
+  font-family: Linearicons;
+  content: '\e6e2';
+  margin-right: 10px;
+  font-size: 25px;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.hero_main .inline .title1 {
+  display: block;
+  margin: 25px 0px 15px;
+  color: white;
+  padding: 6px 10px 13px 16px;
+  border-radius: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 17px;
+  border: 0 solid rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.1);
+  width: 340px;
+}
+
+.hero_main .inline .start1 {
+  background: #f47b21;
+  width: 207px;
+  height: 20px;
+  text-align: center;
+  padding: 20px 12px;
+  margin: 20px 5px 0px 0px;
+  font-weight: 700;
+}
+
+.hero_main .inline .title2 {
+  font-size: 19px;
+  color: white;
+  font-family: FriendlyFont, sans-serif;
+}
+/* .weather_animated .location {
+            height: 300px;
+            width: 500PX;
+            background: #16394c;
+            border-radius: 10px;
+            border: 4px solid #608094;
+            color: white;
+            position: relative;
+            right: 40px;
+        } */
+
+.weather_animated .location {
+  display: block;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+}
+/* .weather_animated .location .title {
+            text-align: center;
+            position: relative;
+            top: 10px;
+        } */
+/* .weather_animated .location .middle { 
+        display: inline-block;
+    } */
+
+.weather_animated .location .title .content {
+  font-weight: bold;
+}
+
+.weather_animated .location .middle .image_cloud {
+  /* position: relative;
+                        left: 15px; */
+  float: left;
+  width: 275px;
+  height: 137px;
+}
+
+.weather_animated .location .middle .image_cloud img {
+  background-size: cover;
+  width: 140px;
+  height: 137px;
+  left: 50px;
+  /* top: 17px; */
+  position: absolute;
+}
+
+.weather_animated .location .main_descrip {
+  /* position: absolute;
+                        width: 100px;
+                        height: 19.59px;
+                        top: 75%;
+                        right: 70%; */
+  position: absolute;
+  top: 110px;
+  left: 70px;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+}
+
+.weather_animated .location .middle {
+  position: relative;
+}
+
+.weather_animated .location .middle .temp {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  margin-top: -50px;
+}
+
+.weather_animated .location .middle .temp .current_temp {
+  font-size: 32px;
+}
+
+.weather_animated .location .main_right {
+  /* position: absolute;
+                top: 40%;
+                right: 15%;
+                margin-top: -27px; */
+  /* position: relative;
+                bottom: 80px;
+                left: 350px; */
+  /* font-size: 14px;
+            float: right;
+            width: 180px;
+            height: 120px;
+            position: absolute;
+            left: 320px;
+            top: 50px; */
+  float: right;
+  font-size: 14px;
+  height: 137px;
+  padding-top: 26px;
+  position: absolute;
+  right: 37px;
+  left: unset;
+}
+
+.weather_animated .location .main_right span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.weather_animated .location .main_right .current_temp {
+  position: absolute;
+  left: -135px;
+  top: 33px;
+  font-size: 32px;
+}
+/* .week {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            position: relative;
+            top: 120px;
+            right: 280px;
+        } */
+
+.weather_animated .week {
+  clear: both;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* .week .day {
+            position: relative;
+            left: 10%;
+            bottom: 20px;
+            text-align: center;
+            font-size: 12px;
+            text-align: center;
+        } */
+
+.weather_animated .week .day {
+  display: inline-block;
+  width: 95px;
+  height: 107px;
+  position: relative;
+}
+
+.week .day .cloud_slight_rain {
+  background: url(https://weatherstack.com/site_images/weather_icon_cloud_slight_rain.svg);
+  display: inline-block;
+  width: 80px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.customers {
+  padding: 40px 0 12px;
+  background: #eff2f5;
+  /* margin-bottom: 25px; */
+}
+
+.customers .container {
+  width: 1170px;
+  margin: auto;
+}
+
+.container .company {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.container .company ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.container .company ul li {
+  display: inline-block;
+}
+
+.container .company ul li.intro {
+  width: 185px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'Promo';
+  text-align: left;
+  position: relative;
+  bottom: 15px;
+  margin-right: -20px;
+  margin-bottom: 10px;
+}
+
+.container .company ul li.deloitte {
+  background: url(https://weatherstack.com/site_images/client_deloitte.svg);
+  width: 187px;
+  height: 50px;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+
+.container .company ul li.microsoft {
+  background: url(https://weatherstack.com/site_images/client_microsoft.svg);
+  width: 187px;
+  height: 50px;
+  background-size: 135px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .company ul li.warnerbros {
+  background: url(https://weatherstack.com/site_images/client_warnerbros.svg);
+  background-size: 48px;
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 50px;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.container .company ul li.wawa {
+  background: url(https://weatherstack.com/site_images/client_wawa.svg);
+  height: 50px;
+  background-size: 85px;
+  background-repeat: no-repeat;
+  width: 132px;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.container .company ul li.schneider {
+  background: url(https://weatherstack.com/site_images/client_schneider.svg);
+  width: 187px;
+  height: 50px;
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .company ul li.ericsson {
+  background: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+  width: 112px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+.large_show {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.show {
+  padding-right: 15px;
+  max-width: 1170px;
+  padding-left: 15px;
+  position: relative;
+  margin: auto;
+}
+
+.show .container {
+  background: #eff2f5;
+  border-radius: 5px;
+  padding: 18px 0 19px 0;
+}
+/* .container>.boxes {
+            display: inline-block;
+            width: 250px;
+            text-align: left;
+            margin: 0 12px;
+            border-radius: 5px;
+            vertical-align: text-top;
+        } */
+/* .show .container .boxes {
+                display: inline-block;
+                /* width: 250px;
+                height: 210px; */
+/* margin: 0 12px;
+                text-align: left;
+                padding: 18px 0 19px 0;
+            } */
+
+@font-face {
+  font-family: Linearicons;
+  src: url(./Linearicons.ttf);
+}
+
+.show .container .boxes .box {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+  margin: 0 12px;
+  border-radius: 5px;
+  background: #ebeff4;
+}
+
+.show .container .boxes .box_realtime h5::before {
+  font-family: Linearicons;
+  content: '\e655';
+  font-size: 30px;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.show .container .boxes .box_locations h5::before {
+  font-family: Linearicons;
+  content: '\e778';
+  font-size: 28px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.show .container .boxes .box_uptime h5::before {
+  font-family: Linearicons;
+  content: '\e836';
+  font-size: 30px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.show .container .boxes .box_price h5::before {
+  font-family: Linearicons;
+  content: '\e756';
+  font-size: 30px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.show .container .boxes .box h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 20px;
+}
+
+.show .container .boxes .box p {
+  font-size: 14px;
+  margin: 0px 0px 10px;
+}
+
+.main_features {
+  background: #ffffff;
+  padding: 25px 0 65px 0;
+  width: 100%;
+}
+
+.main_features .container {
+  /* padding-right: 15px; */
+  width: 1170px;
+  /* height: 347px; */
+  /* padding-left: 15px; */
+  position: relative;
+  margin: auto;
+}
+
+.main_features .container .details {
+  width: 440px;
+  /* height: 332px; */
+  line-height: 1.4;
+  position: relative;
+  left: 15px;
+}
+
+.main_features .container .details h4 {
+  font-size: 25px;
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.main_features .container .details p {
+  font-size: 15px;
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+  margin-bottom: 30px;
+}
+/* .main_feautures .container .details {
+                float: left;
+                width: 440px;
+            } */
+
+.details ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.main_features .container .details ul li.realtime::before {
+  font-family: Linearicons;
+  content: '\e8da';
+  font-size: 25px;
+  margin-right: 11px;
+}
+
+.main_features .container .details ul li.historical::before {
+  font-family: Linearicons;
+  content: '\e8e3';
+  font-size: 25px;
+  margin-right: 11px;
+}
+
+.main_features .container .details ul li.forecasts::before {
+  font-family: Linearicons;
+  content: '\e786';
+  font-size: 25px;
+  margin-right: 11px;
+}
+
+.main_features .container .details ul li.autocomplete::before {
+  font-family: Linearicons;
+  content: '\e784';
+  font-size: 25px;
+  margin-right: 11px;
+}
+
+.main_features .container .details ul li.bulk::before {
+  font-family: Linearicons;
+  content: '\e977';
+  font-size: 25px;
+  margin-right: 11px;
+}
+
+.main_features img {
+  /* float: right; */
+  width: 635px;
+  height: 347px;
+  position: relative;
+  top: -300px;
+  left: 40%;
+  line-height: 1.4;
+}
+
+.method {
+  background: #184157 url(https://weatherstack.com/site_images/bg_waves_4.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+}
+
+.method .container {
+  width: 1170px;
+  margin: auto;
+}
+
+.method .container h4 {
+  font-size: 25px;
+  font-family: 'Arial';
+  top: 10px;
+  color: #ffffff;
+  /* padding: 40px 0 40px 0; */
+}
+
+.method .container h4::before {
+  /* content: 'Example';
+                        display: block;
+                        text-transform: uppercase;
+                        background: #416376;
+                        width: 100px;
+                        height: 38px;
+                        margin: auto;
+                        border-radius: 40px;
+                        color: #ffffff;
+                        font-size: 14px;
+                        line-height: 38px;
+                        position: relative;
+                        top: -10px; */
+  content: 'Example';
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background: #416376;
+  width: 100px;
+  border-radius: 99px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-top: -15px;
+  text-align: center;
+  padding: 10px 0 11px 0;
+}
+
+.method .container h5 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.method .buttons {
+  margin: 40px 0px 0px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.method ul.buttons li {
+  display: inline-block;
+  margin-left: -3px;
+  margin-right: -2px;
+}
+
+.method ul.buttons li a {
+  color: #283f59;
+  width: 190px;
+  display: inline-block;
+  padding: 16px 10px 18px 10px;
+  background: #ffffff;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.method ul.buttons li a.selected {
+  background: #f47b21;
+  padding: 16px 10px 18px 10px;
+  color: #ffffff;
+}
+/* ul.buttons li a {
+                display: inline-block;
+                background: #f47b21;
+                padding: 16px 10px 18px 10px;
+            } */
+
+.result {
+  display: block;
+}
+
+.result .prettyprinted {
+  background: #17242b;
+  width: 660px;
+  margin: auto;
+  text-align: left;
+  color: #ffce54;
+}
+
+.morefeatures {
+  /* width: 1140px; */
+  margin-top: 40px;
+}
+
+.morefeatures ul li {
+  display: inline-block;
+  width: 330px;
+  padding: 14px 20px 15px 20px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.morefeatures ul li span.heading {
+  /* font-size: 15px; */
+  color: #ffffff;
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+  margin-bottom: 5px;
+  /* line-height: 1.4; */
+}
+
+.morefeatures ul li p {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+  margin-top: 8px;
+  line-height: 20px;
+}
+
+.morefeatures ul li.sources .heading::before {
+  font-family: Linearicons;
+  content: '\e661';
+  position: relative;
+  right: 5px;
+}
+
+.morefeatures ul li.speed .heading::before {
+  font-family: Linearicons;
+  content: '\e836';
+  position: relative;
+  right: 5px;
+}
+
+.morefeatures ul li.scalable .heading::before {
+  font-family: Linearicons;
+  content: '\e7fb';
+  position: relative;
+  right: 5px;
+}
+
+.morefeatures ul li.location_lookup .heading::before {
+  font-family: Linearicons;
+  content: '\e923';
+  position: relative;
+  right: 5px;
+}
+
+.morefeatures ul li.security .heading::before {
+  font-family: Linearicons;
+  content: '\e668';
+  position: relative;
+  right: 5px;
+}
+
+.morefeatures ul li.api_docs .heading::before {
+  font-family: Linearicons;
+  content: '\e782';
+  position: relative;
+  right: 5px;
+}
+
+.grid {
+  background: #ffffff;
+  padding: 45px 0 50px 0;
+}
+
+.grid .container {
+  width: 1170px;
+  margin: auto;
+  background: #ffffff;
+}
+
+.grid .container h4 {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Arial';
+}
+
+.grid .container h5 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.grid .container ul {
+  width: 1140px;
+}
+
+.grid .container ul li.daimler {
+  background: #263e6a
+    url(https://weatherstack.com/site_images/client_white_daimler.svg);
+  background-size: 155px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+}
+
+.grid .container ul li.deloitte {
+  background: #eef2f5
+    url(https://weatherstack.com/site_images/client_deloitte.svg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+}
+
+.grid .container ul li.ericsson {
+  background: #01275b
+    url(https://weatherstack.com/site_images/client_white_ericsson_2.svg);
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+}
+
+.grid .container ul li.microsoft {
+  background: #eef2f5
+    url(https://weatherstack.com/site_images/client_microsoft.svg);
+  background-size: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+}
+
+.grid .container ul li.schneider {
+  background: #009e4d
+    url(https://weatherstack.com/site_images/client_white_schneider.svg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+}
+
+.grid .container ul li.warnerbros {
+  background: #027ac2
+    url(https://weatherstack.com/site_images/client_white_warnerbros.svg);
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 190px;
+  height: 100px;
+}
+
+.grid .container ul li.wawa {
+  background: #ee2e25
+    url(https://weatherstack.com/site_images/client_white_wawa.svg);
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+}
+
+.grid .container ul li.canda {
+  background: #eef2f5 url(https://weatherstack.com/site_images/client_canda.svg);
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 135px;
+  height: 100px;
+  display: inline-block;
+}
+
+.grid .container ul li.mckinsey {
+  background: #23477f
+    url(https://weatherstack.com/site_images/client_mckinsey.svg);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 10px;
+  width: 260px;
+  display: inline-block;
+  height: 100px;
+}
+
+.grid .container ul li.rimowa {
+  background: #eef2f5
+    url(https://weatherstack.com/site_images/client_rimowa.svg);
+  background-size: 155px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+}
+
+.cta {
+  background: #eef2f5;
+  background-repeat: no-repeat;
+  /* width: 2110px; */
+  /* height: 116px; */
+  padding: 45px 30px 50px 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.cta .container {
+  /* width: 2110px; */
+  /* height: 21px; */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.cta .container p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.cta .container p span::after {
+  font-family: Linearicons;
+  content: '\e944';
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cta .container a {
+  background: #f47b21;
+  color: white;
+  font-size: 13px;
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 17px 15px;
+  text-align: center;
+}
+
+.cta .container {
+  clear: both;
+}
+
+footer {
+  /* width: 2110px;
+                height: 381px; */
+  background: #184157;
+  text-align: center;
+}
+
+footer .wrapper {
+  margin: auto;
+  max-width: 1170px;
+}
+/* footer .custom_footer ::before {
+                content: " ";
+                display: table;
+            } */
+
+footer .custom_footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+footer .custom_footer .right_side {
+  display: inline-block;
+  font-size: 12px;
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+}
+
+footer .custom_footer .right_side.copyright-section {
+  vertical-align: top;
+  /* margin: auto; */
+  margin-right: 50px;
+  text-align: center;
+  /* position: relative;
+                top: 3px; */
+}
+
+footer .custom_footer .social-links {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.github_logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.facebook_logo {
+  margin-right: 5px;
+}
+
+.instagram_logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.youtube_logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.twitter_logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.linkedin_logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer .custom_footer ul li.heading {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer .custom_footer ul li {
+  line-height: 30px;
+  font-size: 14px;
+  font-family: 'Open Sans', 'Gill Sans MT', 'Gill Sans';
+}
+
+footer .custom_footer ul {
+  width: 196px;
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+}
+
+footer .container {
+  padding-top: 100px;
+}
+
+.container .copyright_link {
+  color: #fff;
+}
+
+.container .copyright_link a {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.container .copyright_text {
+  font-size: 12px;
+  color: #fff;
+}
+
+.container .copyright_text a {
+  text-decoration: underline;
+}
